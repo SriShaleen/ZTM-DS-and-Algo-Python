@@ -38,8 +38,7 @@ class my_array():
     def delete(self,index):
         for i in range(index, self.length-1):
             self.data[i] = self.data[i+1] #Shifts elements from the given index to the end by one place towards left
-        del self.data[self.length - 1] #The last element which remains two times in the array is deleted
-        self.length -= 1 #The lenght is decremented by 1. O(n) operation
+        pop() # This will re-use the code snippet without re-writing it
 
 
 
